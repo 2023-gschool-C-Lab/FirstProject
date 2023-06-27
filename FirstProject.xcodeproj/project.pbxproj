@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		042EF9A12A4A7395008A5017 /* FourthStepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042EF9A02A4A7394008A5017 /* FourthStepView.swift */; };
+		042EF9A32A4A73E9008A5017 /* FifthStepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042EF9A22A4A73E9008A5017 /* FifthStepView.swift */; };
 		044A36FE2A4716A700A5DD11 /* FirstProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044A36FD2A4716A700A5DD11 /* FirstProjectApp.swift */; };
 		044A37002A4716A700A5DD11 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044A36FF2A4716A700A5DD11 /* ContentView.swift */; };
 		044A37022A4716AA00A5DD11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 044A37012A4716AA00A5DD11 /* Assets.xcassets */; };
@@ -14,6 +16,28 @@
 		044A370F2A4716AA00A5DD11 /* FirstProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044A370E2A4716AA00A5DD11 /* FirstProjectTests.swift */; };
 		044A37192A4716AA00A5DD11 /* FirstProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044A37182A4716AA00A5DD11 /* FirstProjectUITests.swift */; };
 		044A371B2A4716AA00A5DD11 /* FirstProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044A371A2A4716AA00A5DD11 /* FirstProjectUITestsLaunchTests.swift */; };
+		044A37292A4716D100A5DD11 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044A37282A4716D100A5DD11 /* MainView.swift */; };
+		044A372B2A4716DC00A5DD11 /* firstLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044A372A2A4716DC00A5DD11 /* firstLoginView.swift */; };
+		044A372E2A4716F900A5DD11 /* FirstStepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044A372D2A4716F900A5DD11 /* FirstStepView.swift */; };
+		044A37302A47170700A5DD11 /* SecondStepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044A372F2A47170700A5DD11 /* SecondStepView.swift */; };
+		044A37322A47171100A5DD11 /* ThirdStepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044A37312A47171100A5DD11 /* ThirdStepView.swift */; };
+		044A37392A47174900A5DD11 /* TapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044A37382A47174900A5DD11 /* TapView.swift */; };
+		044A373B2A47175400A5DD11 /* DiaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044A373A2A47175400A5DD11 /* DiaryView.swift */; };
+		044A373D2A47176500A5DD11 /* DiaryWater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044A373C2A47176500A5DD11 /* DiaryWater.swift */; };
+		044A373F2A47177300A5DD11 /* DiaryHealth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044A373E2A47177300A5DD11 /* DiaryHealth.swift */; };
+		044A37412A47178700A5DD11 /* DiaryViewpr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044A37402A47178700A5DD11 /* DiaryViewpr.swift */; };
+		044A37432A47179200A5DD11 /* DiaryTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044A37422A47179200A5DD11 /* DiaryTitleView.swift */; };
+		044A37452A47179F00A5DD11 /* PlusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044A37442A47179F00A5DD11 /* PlusView.swift */; };
+		044A37482A4717BA00A5DD11 /* PickerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044A37472A4717BA00A5DD11 /* PickerData.swift */; };
+		044A374A2A4717C400A5DD11 /* HeightPickerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044A37492A4717C400A5DD11 /* HeightPickerData.swift */; };
+		044A374C2A4717D000A5DD11 /* Color+hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044A374B2A4717D000A5DD11 /* Color+hex.swift */; };
+		044A37512A472D5500A5DD11 /* BreakfastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044A37502A472D5500A5DD11 /* BreakfastView.swift */; };
+		044A37532A47352B00A5DD11 /* BreakfastView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044A37522A47352B00A5DD11 /* BreakfastView2.swift */; };
+		044A37552A47FC6500A5DD11 /* BreakfastView3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044A37542A47FC6500A5DD11 /* BreakfastView3.swift */; };
+		044A37572A47FE0500A5DD11 /* BreakfastView4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044A37562A47FE0500A5DD11 /* BreakfastView4.swift */; };
+		044A375A2A491F8700A5DD11 /* TakeOurTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044A37592A491F8700A5DD11 /* TakeOurTest.swift */; };
+		044A375C2A4922BB00A5DD11 /* TakeOurTest1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044A375B2A4922BB00A5DD11 /* TakeOurTest1.swift */; };
+		044A375E2A49271C00A5DD11 /* TakeOurTest2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044A375D2A49271C00A5DD11 /* TakeOurTest2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +58,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		042EF9A02A4A7394008A5017 /* FourthStepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthStepView.swift; sourceTree = "<group>"; };
+		042EF9A22A4A73E9008A5017 /* FifthStepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthStepView.swift; sourceTree = "<group>"; };
 		044A36FA2A4716A700A5DD11 /* FirstProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		044A36FD2A4716A700A5DD11 /* FirstProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstProjectApp.swift; sourceTree = "<group>"; };
 		044A36FF2A4716A700A5DD11 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +70,28 @@
 		044A37142A4716AA00A5DD11 /* FirstProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FirstProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		044A37182A4716AA00A5DD11 /* FirstProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstProjectUITests.swift; sourceTree = "<group>"; };
 		044A371A2A4716AA00A5DD11 /* FirstProjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstProjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		044A37282A4716D100A5DD11 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		044A372A2A4716DC00A5DD11 /* firstLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firstLoginView.swift; sourceTree = "<group>"; };
+		044A372D2A4716F900A5DD11 /* FirstStepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstStepView.swift; sourceTree = "<group>"; };
+		044A372F2A47170700A5DD11 /* SecondStepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondStepView.swift; sourceTree = "<group>"; };
+		044A37312A47171100A5DD11 /* ThirdStepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdStepView.swift; sourceTree = "<group>"; };
+		044A37382A47174900A5DD11 /* TapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapView.swift; sourceTree = "<group>"; };
+		044A373A2A47175400A5DD11 /* DiaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryView.swift; sourceTree = "<group>"; };
+		044A373C2A47176500A5DD11 /* DiaryWater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryWater.swift; sourceTree = "<group>"; };
+		044A373E2A47177300A5DD11 /* DiaryHealth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryHealth.swift; sourceTree = "<group>"; };
+		044A37402A47178700A5DD11 /* DiaryViewpr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryViewpr.swift; sourceTree = "<group>"; };
+		044A37422A47179200A5DD11 /* DiaryTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryTitleView.swift; sourceTree = "<group>"; };
+		044A37442A47179F00A5DD11 /* PlusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlusView.swift; sourceTree = "<group>"; };
+		044A37472A4717BA00A5DD11 /* PickerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerData.swift; sourceTree = "<group>"; };
+		044A37492A4717C400A5DD11 /* HeightPickerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeightPickerData.swift; sourceTree = "<group>"; };
+		044A374B2A4717D000A5DD11 /* Color+hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+hex.swift"; sourceTree = "<group>"; };
+		044A37502A472D5500A5DD11 /* BreakfastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreakfastView.swift; sourceTree = "<group>"; };
+		044A37522A47352B00A5DD11 /* BreakfastView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreakfastView2.swift; sourceTree = "<group>"; };
+		044A37542A47FC6500A5DD11 /* BreakfastView3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreakfastView3.swift; sourceTree = "<group>"; };
+		044A37562A47FE0500A5DD11 /* BreakfastView4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreakfastView4.swift; sourceTree = "<group>"; };
+		044A37592A491F8700A5DD11 /* TakeOurTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeOurTest.swift; sourceTree = "<group>"; };
+		044A375B2A4922BB00A5DD11 /* TakeOurTest1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeOurTest1.swift; sourceTree = "<group>"; };
+		044A375D2A49271C00A5DD11 /* TakeOurTest2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeOurTest2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +145,12 @@
 				044A36FD2A4716A700A5DD11 /* FirstProjectApp.swift */,
 				044A36FF2A4716A700A5DD11 /* ContentView.swift */,
 				044A37012A4716AA00A5DD11 /* Assets.xcassets */,
+				044A37272A4716BF00A5DD11 /* FirstView */,
+				044A372C2A4716E600A5DD11 /* StepView */,
+				044A37372A47173900A5DD11 /* DiaryVieww */,
+				044A374F2A472D1300A5DD11 /* SmallView */,
+				044A37462A4717AC00A5DD11 /* Data */,
+				044A37582A491F6B00A5DD11 /* Diets */,
 				044A37032A4716AA00A5DD11 /* Preview Content */,
 			);
 			path = FirstProject;
@@ -125,6 +179,72 @@
 				044A371A2A4716AA00A5DD11 /* FirstProjectUITestsLaunchTests.swift */,
 			);
 			path = FirstProjectUITests;
+			sourceTree = "<group>";
+		};
+		044A37272A4716BF00A5DD11 /* FirstView */ = {
+			isa = PBXGroup;
+			children = (
+				044A37282A4716D100A5DD11 /* MainView.swift */,
+				044A372A2A4716DC00A5DD11 /* firstLoginView.swift */,
+			);
+			path = FirstView;
+			sourceTree = "<group>";
+		};
+		044A372C2A4716E600A5DD11 /* StepView */ = {
+			isa = PBXGroup;
+			children = (
+				044A372D2A4716F900A5DD11 /* FirstStepView.swift */,
+				044A372F2A47170700A5DD11 /* SecondStepView.swift */,
+				044A37312A47171100A5DD11 /* ThirdStepView.swift */,
+				042EF9A02A4A7394008A5017 /* FourthStepView.swift */,
+				042EF9A22A4A73E9008A5017 /* FifthStepView.swift */,
+			);
+			path = StepView;
+			sourceTree = "<group>";
+		};
+		044A37372A47173900A5DD11 /* DiaryVieww */ = {
+			isa = PBXGroup;
+			children = (
+				044A37382A47174900A5DD11 /* TapView.swift */,
+				044A373A2A47175400A5DD11 /* DiaryView.swift */,
+				044A373E2A47177300A5DD11 /* DiaryHealth.swift */,
+				044A37402A47178700A5DD11 /* DiaryViewpr.swift */,
+				044A37422A47179200A5DD11 /* DiaryTitleView.swift */,
+				044A373C2A47176500A5DD11 /* DiaryWater.swift */,
+				044A37442A47179F00A5DD11 /* PlusView.swift */,
+			);
+			path = DiaryVieww;
+			sourceTree = "<group>";
+		};
+		044A37462A4717AC00A5DD11 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				044A37472A4717BA00A5DD11 /* PickerData.swift */,
+				044A37492A4717C400A5DD11 /* HeightPickerData.swift */,
+				044A374B2A4717D000A5DD11 /* Color+hex.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		044A374F2A472D1300A5DD11 /* SmallView */ = {
+			isa = PBXGroup;
+			children = (
+				044A37502A472D5500A5DD11 /* BreakfastView.swift */,
+				044A37522A47352B00A5DD11 /* BreakfastView2.swift */,
+				044A37542A47FC6500A5DD11 /* BreakfastView3.swift */,
+				044A37562A47FE0500A5DD11 /* BreakfastView4.swift */,
+			);
+			path = SmallView;
+			sourceTree = "<group>";
+		};
+		044A37582A491F6B00A5DD11 /* Diets */ = {
+			isa = PBXGroup;
+			children = (
+				044A37592A491F8700A5DD11 /* TakeOurTest.swift */,
+				044A375B2A4922BB00A5DD11 /* TakeOurTest1.swift */,
+				044A375D2A49271C00A5DD11 /* TakeOurTest2.swift */,
+			);
+			path = Diets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +377,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				042EF9A12A4A7395008A5017 /* FourthStepView.swift in Sources */,
+				044A37412A47178700A5DD11 /* DiaryViewpr.swift in Sources */,
+				044A373F2A47177300A5DD11 /* DiaryHealth.swift in Sources */,
+				044A37302A47170700A5DD11 /* SecondStepView.swift in Sources */,
+				044A37322A47171100A5DD11 /* ThirdStepView.swift in Sources */,
+				044A374A2A4717C400A5DD11 /* HeightPickerData.swift in Sources */,
+				044A37392A47174900A5DD11 /* TapView.swift in Sources */,
+				044A374C2A4717D000A5DD11 /* Color+hex.swift in Sources */,
+				042EF9A32A4A73E9008A5017 /* FifthStepView.swift in Sources */,
+				044A37532A47352B00A5DD11 /* BreakfastView2.swift in Sources */,
 				044A37002A4716A700A5DD11 /* ContentView.swift in Sources */,
+				044A373B2A47175400A5DD11 /* DiaryView.swift in Sources */,
+				044A375E2A49271C00A5DD11 /* TakeOurTest2.swift in Sources */,
+				044A37452A47179F00A5DD11 /* PlusView.swift in Sources */,
+				044A37292A4716D100A5DD11 /* MainView.swift in Sources */,
+				044A37482A4717BA00A5DD11 /* PickerData.swift in Sources */,
+				044A37572A47FE0500A5DD11 /* BreakfastView4.swift in Sources */,
+				044A373D2A47176500A5DD11 /* DiaryWater.swift in Sources */,
+				044A372E2A4716F900A5DD11 /* FirstStepView.swift in Sources */,
 				044A36FE2A4716A700A5DD11 /* FirstProjectApp.swift in Sources */,
+				044A37512A472D5500A5DD11 /* BreakfastView.swift in Sources */,
+				044A372B2A4716DC00A5DD11 /* firstLoginView.swift in Sources */,
+				044A375A2A491F8700A5DD11 /* TakeOurTest.swift in Sources */,
+				044A37552A47FC6500A5DD11 /* BreakfastView3.swift in Sources */,
+				044A37432A47179200A5DD11 /* DiaryTitleView.swift in Sources */,
+				044A375C2A4922BB00A5DD11 /* TakeOurTest1.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
