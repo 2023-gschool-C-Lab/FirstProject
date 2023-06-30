@@ -7,9 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0419CBB92A4BD34900A757E9 /* TakeOurTest3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0419CBB82A4BD34900A757E9 /* TakeOurTest3.swift */; };
+		0419CBBE2A4E641300A757E9 /* SettingView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0419CBBD2A4E641300A757E9 /* SettingView1.swift */; };
+		0419CBC02A4E653D00A757E9 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0419CBBF2A4E653D00A757E9 /* Profile.swift */; };
+		0419CBC22A4E6A9D00A757E9 /* Customization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0419CBC12A4E6A9D00A757E9 /* Customization.swift */; };
+		0419CBC42A4E797900A757E9 /* PersonalDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0419CBC32A4E797900A757E9 /* PersonalDetail.swift */; };
 		042EF9A12A4A7395008A5017 /* FourthStepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042EF9A02A4A7394008A5017 /* FourthStepView.swift */; };
 		042EF9A32A4A73E9008A5017 /* FifthStepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042EF9A22A4A73E9008A5017 /* FifthStepView.swift */; };
 		042EF9A52A4A7C94008A5017 /* .gitattributes in Resources */ = {isa = PBXBuildFile; fileRef = 042EF9A42A4A7C94008A5017 /* .gitattributes */; };
+		042EF9AA2A4A7F1F008A5017 /* SnackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042EF9A92A4A7F1F008A5017 /* SnackView.swift */; };
+		042EF9AC2A4A7F81008A5017 /* DinnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042EF9AB2A4A7F81008A5017 /* DinnerView.swift */; };
+		042EF9AF2A4A7FBA008A5017 /* LunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042EF9AE2A4A7FBA008A5017 /* LunchView.swift */; };
 		044A36FE2A4716A700A5DD11 /* FirstProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044A36FD2A4716A700A5DD11 /* FirstProjectApp.swift */; };
 		044A37002A4716A700A5DD11 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044A36FF2A4716A700A5DD11 /* ContentView.swift */; };
 		044A37022A4716AA00A5DD11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 044A37012A4716AA00A5DD11 /* Assets.xcassets */; };
@@ -59,9 +67,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0419CBB82A4BD34900A757E9 /* TakeOurTest3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeOurTest3.swift; sourceTree = "<group>"; };
+		0419CBBD2A4E641300A757E9 /* SettingView1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView1.swift; sourceTree = "<group>"; };
+		0419CBBF2A4E653D00A757E9 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		0419CBC12A4E6A9D00A757E9 /* Customization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customization.swift; sourceTree = "<group>"; };
+		0419CBC32A4E797900A757E9 /* PersonalDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDetail.swift; sourceTree = "<group>"; };
 		042EF9A02A4A7394008A5017 /* FourthStepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthStepView.swift; sourceTree = "<group>"; };
 		042EF9A22A4A73E9008A5017 /* FifthStepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthStepView.swift; sourceTree = "<group>"; };
 		042EF9A42A4A7C94008A5017 /* .gitattributes */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitattributes; sourceTree = "<group>"; };
+		042EF9A92A4A7F1F008A5017 /* SnackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnackView.swift; sourceTree = "<group>"; };
+		042EF9AB2A4A7F81008A5017 /* DinnerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinnerView.swift; sourceTree = "<group>"; };
+		042EF9AE2A4A7FBA008A5017 /* LunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunchView.swift; sourceTree = "<group>"; };
 		044A36FA2A4716A700A5DD11 /* FirstProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		044A36FD2A4716A700A5DD11 /* FirstProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstProjectApp.swift; sourceTree = "<group>"; };
 		044A36FF2A4716A700A5DD11 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -121,6 +137,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0419CBBC2A4E640300A757E9 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				0419CBBD2A4E641300A757E9 /* SettingView1.swift */,
+				0419CBBF2A4E653D00A757E9 /* Profile.swift */,
+				0419CBC12A4E6A9D00A757E9 /* Customization.swift */,
+				0419CBC32A4E797900A757E9 /* PersonalDetail.swift */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		042EF9A62A4A7E98008A5017 /* Lunch */ = {
+			isa = PBXGroup;
+			children = (
+				042EF9AE2A4A7FBA008A5017 /* LunchView.swift */,
+			);
+			path = Lunch;
+			sourceTree = "<group>";
+		};
+		042EF9A72A4A7EA4008A5017 /* Dinner */ = {
+			isa = PBXGroup;
+			children = (
+				042EF9AB2A4A7F81008A5017 /* DinnerView.swift */,
+			);
+			path = Dinner;
+			sourceTree = "<group>";
+		};
+		042EF9A82A4A7EB1008A5017 /* Snack */ = {
+			isa = PBXGroup;
+			children = (
+				042EF9A92A4A7F1F008A5017 /* SnackView.swift */,
+			);
+			path = Snack;
+			sourceTree = "<group>";
+		};
 		044A36F12A4716A700A5DD11 = {
 			isa = PBXGroup;
 			children = (
@@ -151,9 +202,13 @@
 				044A37272A4716BF00A5DD11 /* FirstView */,
 				044A372C2A4716E600A5DD11 /* StepView */,
 				044A37372A47173900A5DD11 /* DiaryVieww */,
+				042EF9A82A4A7EB1008A5017 /* Snack */,
+				042EF9A72A4A7EA4008A5017 /* Dinner */,
+				042EF9A62A4A7E98008A5017 /* Lunch */,
 				044A374F2A472D1300A5DD11 /* SmallView */,
 				044A37462A4717AC00A5DD11 /* Data */,
 				044A37582A491F6B00A5DD11 /* Diets */,
+				0419CBBC2A4E640300A757E9 /* Setting */,
 				044A37032A4716AA00A5DD11 /* Preview Content */,
 			);
 			path = FirstProject;
@@ -246,6 +301,7 @@
 				044A37592A491F8700A5DD11 /* TakeOurTest.swift */,
 				044A375B2A4922BB00A5DD11 /* TakeOurTest1.swift */,
 				044A375D2A49271C00A5DD11 /* TakeOurTest2.swift */,
+				0419CBB82A4BD34900A757E9 /* TakeOurTest3.swift */,
 			);
 			path = Diets;
 			sourceTree = "<group>";
@@ -391,16 +447,24 @@
 				044A374C2A4717D000A5DD11 /* Color+hex.swift in Sources */,
 				042EF9A32A4A73E9008A5017 /* FifthStepView.swift in Sources */,
 				044A37532A47352B00A5DD11 /* BreakfastView2.swift in Sources */,
+				042EF9AC2A4A7F81008A5017 /* DinnerView.swift in Sources */,
 				044A37002A4716A700A5DD11 /* ContentView.swift in Sources */,
+				042EF9AA2A4A7F1F008A5017 /* SnackView.swift in Sources */,
+				042EF9AF2A4A7FBA008A5017 /* LunchView.swift in Sources */,
 				044A373B2A47175400A5DD11 /* DiaryView.swift in Sources */,
 				044A375E2A49271C00A5DD11 /* TakeOurTest2.swift in Sources */,
+				0419CBC42A4E797900A757E9 /* PersonalDetail.swift in Sources */,
 				044A37452A47179F00A5DD11 /* PlusView.swift in Sources */,
+				0419CBC22A4E6A9D00A757E9 /* Customization.swift in Sources */,
 				044A37292A4716D100A5DD11 /* MainView.swift in Sources */,
 				044A37482A4717BA00A5DD11 /* PickerData.swift in Sources */,
+				0419CBB92A4BD34900A757E9 /* TakeOurTest3.swift in Sources */,
 				044A37572A47FE0500A5DD11 /* BreakfastView4.swift in Sources */,
 				044A373D2A47176500A5DD11 /* DiaryWater.swift in Sources */,
 				044A372E2A4716F900A5DD11 /* FirstStepView.swift in Sources */,
+				0419CBBE2A4E641300A757E9 /* SettingView1.swift in Sources */,
 				044A36FE2A4716A700A5DD11 /* FirstProjectApp.swift in Sources */,
+				0419CBC02A4E653D00A757E9 /* Profile.swift in Sources */,
 				044A37512A472D5500A5DD11 /* BreakfastView.swift in Sources */,
 				044A372B2A4716DC00A5DD11 /* firstLoginView.swift in Sources */,
 				044A375A2A491F8700A5DD11 /* TakeOurTest.swift in Sources */,

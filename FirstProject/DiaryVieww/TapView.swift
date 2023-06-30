@@ -17,14 +17,10 @@ struct TapView: View {
             
             ZStack {
                 TabView(selection: $selection) {
-                    //            Spacer()
-                    //                .frame(height: -10)
-                    //
                     DiaryView()
                         .tabItem{
                             Image(systemName: "book.closed")
-                            Text("DiaryView")
-                            
+                            Text("Diary")
                         }
                         .tag(0)
                     Text("dfd")
@@ -33,7 +29,6 @@ struct TapView: View {
                             Text("Progress")
                         }
                         .tag(1)
-                    
                     Spacer()
                     
                     TakeOurTest()

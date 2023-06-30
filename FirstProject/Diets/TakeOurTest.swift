@@ -6,32 +6,26 @@
 //
 
 import SwiftUI
+
 struct TakeOurTest: View {
     var body: some View {
-        VStack {
-            ZStack {
-                VStack {
-                    Circle()
-                        .frame(width: 1000, height: 1000)
-                        .foregroundColor(Color(hex: "255946"))
-                    
-                    Spacer()
-                        .frame(height: 1050)
+        ScrollView{
+            VStack(alignment: .leading) {
+                ZStack {
+                    Image("초록")
+                        .resizable()
+                        .scaledToFill()
+                    TakeOurTest1()
                 }
-                TakeOurTest1()
-                    .padding(.top, -350)
+                TakeOurTest2()
+                
             }
-            
-            TakeOurTest2() 
-            
         }
+        . ignoresSafeArea(edges: .top)
     }
 }
-
-        
-        struct TakeOurTest_Previews: PreviewProvider {
-            static var previews: some View {
-                TakeOurTest()
-            }
-        }
-        
+struct TakeOurTest_Previews: PreviewProvider {
+    static var previews: some View {
+        TakeOurTest()
+    }
+}

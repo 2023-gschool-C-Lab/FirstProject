@@ -16,7 +16,7 @@ struct BreakfastView3: View {
                 .frame(width: 200,height: 200)
             
             Spacer()
-                .frame(height: 10)
+                .frame(height: 30)
          
             Text("Here you'll find your recently tracked food")
             Spacer()
