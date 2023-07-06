@@ -42,10 +42,15 @@ struct DiaryTitleView: View {
                     Spacer()
                         .frame(width: 65)
                     
-                    Image(systemName: "person")
-                        .resizable()
-                        .frame(width: 18,height: 18)
-                        .foregroundColor(.white)
+                    NavigationLink {
+                        SettingView1()
+                            .navigationBarBackButtonHidden()
+                    } label: {
+                        Image(systemName: "person")
+                            .resizable()
+                            .frame(width: 18,height: 18)
+                            .foregroundColor(.white)
+                    }
                     
                     Spacer()
                         .frame(width: 14)

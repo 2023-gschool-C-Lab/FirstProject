@@ -13,6 +13,7 @@ struct TapView: View {
     @State var isPlusTabbed = false
     @State var selection = 0
     @State var TapView = false
+    @State var isWeightTapped = false
     
     var body: some View {
         NavigationView {
@@ -25,7 +26,7 @@ struct TapView: View {
                             Text("Diary")
                         }
                         .tag(0)
-                    Text("dfd")
+                    Progress()
                         .tabItem{
                             Image(systemName: "chart.bar.fill")
                             Text("Progress")
@@ -40,7 +41,7 @@ struct TapView: View {
                         }
                         .tag(3)
                     
-                    Text("dd")
+                    RecipeView()
                         .tabItem{
                             Image(systemName: "fork.knife.circle.fill")
                             
@@ -67,10 +68,14 @@ struct TapView: View {
                 .zIndex(1)
                 
                 if isPlusTabbed {
-                    PlusView(isPlusTabbed: $isPlusTabbed)
+                    PlusView(isPlusTabbed: $isPlusTabbed, isWeightTapped: $isWeightTapped)
                         .transition(.move(edge: .bottom))
                         .animation(.easeIn)
                         .ignoresSafeArea()
+                }
+                
+                if isWeightTapped {
+                    weight(isWeightTapped: $isWeightTapped)
                 }
             }
         }

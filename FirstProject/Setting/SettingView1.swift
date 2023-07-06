@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct SettingView1: View {
+    @Environment(\.dismiss) var dismiss
+    
     var body: some View {
         NavigationView{
             
@@ -15,12 +17,20 @@ struct SettingView1: View {
             VStack{
                 
                 HStack{
-                    Image(systemName: "lessthan")
-                        .padding(.trailing,150)
+                    Button {
+                        dismiss()
+                    } label: {
+                        Image(systemName: "chevron.left")
+                            .padding(.trailing,150)
+                    }
                     
-                    
-                    Image(systemName: "gearshape")
-                        .padding(.leading,150)
+                    NavigationLink {
+                        Setting()
+                            .navigationBarBackButtonHidden()
+                    } label: {
+                        Image(systemName: "gearshape")
+                            .padding(.leading,150)
+                    }
                 }
 
                 

@@ -13,10 +13,8 @@ struct PlusView: View {
     @State var isDinnerTapped = false
     @State var isSnackTapped = false
     @State var isLunchTapped = false
-    
-    
     @Binding var isPlusTabbed: Bool
-    
+    @Binding var isWeightTapped: Bool
     
     var body: some View {
         ZStack{
@@ -28,19 +26,25 @@ struct PlusView: View {
                 Spacer()
                     .frame(height: 90)
                 HStack{
-                    VStack{
-                        ZStack{
-                            Circle()
-                                .frame(width: 88,height: 88)
+                    Button {
+                        isWeightTapped = true
+                        isPlusTabbed = false
+                    } label: {
+                        VStack{
+                            ZStack{
+                                Circle()
+                                    .frame(width: 88,height: 88)
+                                    .foregroundColor(.white)
+                                Image("체중")
+                                    .resizable()
+                                    .frame(width: 45,height: 50)
+                            }
+                            
+                            
+                            Text("Weight")
+                                .fontWeight(.semibold)
                                 .foregroundColor(.white)
-                            Image("체중")
-                                .resizable()
-                                .frame(width: 45,height: 50)
                         }
-                        
-                        Text("Weight")
-                            .fontWeight(.semibold)
-                            .foregroundColor(.white)
                     }
                     .transition(.move(edge: .bottom))
                     .animation(.default.delay(0.05))
@@ -228,6 +232,14 @@ struct PlusView: View {
             }, content: {
                 SnackView(isBreakFastTapped: $isSnackTapped)
             })
+            
+//            .fullScreenCover(isPresented: $isWeightTapped, onDismiss: {
+//                isWeightTapped = false
+//            }, content: {
+//                weight()
+//            })
+            
+            
             
         }
     }
