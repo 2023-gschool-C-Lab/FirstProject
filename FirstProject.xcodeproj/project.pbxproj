@@ -12,6 +12,13 @@
 		0419CBC02A4E653D00A757E9 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0419CBBF2A4E653D00A757E9 /* Profile.swift */; };
 		0419CBC22A4E6A9D00A757E9 /* Customization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0419CBC12A4E6A9D00A757E9 /* Customization.swift */; };
 		0419CBC42A4E797900A757E9 /* PersonalDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0419CBC32A4E797900A757E9 /* PersonalDetail.swift */; };
+		0419CBC82A52508B00A757E9 /* FoodListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0419CBC72A52508B00A757E9 /* FoodListView.swift */; };
+		0419CBCC2A52748E00A757E9 /* Searchbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0419CBCB2A52748E00A757E9 /* Searchbar.swift */; };
+		0419CBCE2A52751200A757E9 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0419CBCD2A52751200A757E9 /* SearchView.swift */; };
+		0419CBD02A54F68B00A757E9 /* weightPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0419CBCF2A54F68B00A757E9 /* weightPicker.swift */; };
+		0419CBD22A55050500A757E9 /* ProfilePlus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0419CBD12A55050500A757E9 /* ProfilePlus.swift */; };
+		0419CBD42A55063F00A757E9 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0419CBD32A55063F00A757E9 /* ImagePicker.swift */; };
+		0419CBD72A55119500A757E9 /* DailyIntake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0419CBD62A55119500A757E9 /* DailyIntake.swift */; };
 		042EF9A12A4A7395008A5017 /* FourthStepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042EF9A02A4A7394008A5017 /* FourthStepView.swift */; };
 		042EF9A32A4A73E9008A5017 /* FifthStepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042EF9A22A4A73E9008A5017 /* FifthStepView.swift */; };
 		042EF9A52A4A7C94008A5017 /* .gitattributes in Resources */ = {isa = PBXBuildFile; fileRef = 042EF9A42A4A7C94008A5017 /* .gitattributes */; };
@@ -72,6 +79,14 @@
 		0419CBBF2A4E653D00A757E9 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		0419CBC12A4E6A9D00A757E9 /* Customization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customization.swift; sourceTree = "<group>"; };
 		0419CBC32A4E797900A757E9 /* PersonalDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDetail.swift; sourceTree = "<group>"; };
+		0419CBC72A52508B00A757E9 /* FoodListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodListView.swift; sourceTree = "<group>"; };
+		0419CBCB2A52748E00A757E9 /* Searchbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Searchbar.swift; sourceTree = "<group>"; };
+		0419CBCD2A52751200A757E9 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		0419CBCF2A54F68B00A757E9 /* weightPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weightPicker.swift; sourceTree = "<group>"; };
+		0419CBD12A55050500A757E9 /* ProfilePlus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePlus.swift; sourceTree = "<group>"; };
+		0419CBD32A55063F00A757E9 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		0419CBD62A55119500A757E9 /* DailyIntake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyIntake.swift; sourceTree = "<group>"; };
+		0419CC592A553A7A00A757E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		042EF9A02A4A7394008A5017 /* FourthStepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthStepView.swift; sourceTree = "<group>"; };
 		042EF9A22A4A73E9008A5017 /* FifthStepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthStepView.swift; sourceTree = "<group>"; };
 		042EF9A42A4A7C94008A5017 /* .gitattributes */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitattributes; sourceTree = "<group>"; };
@@ -144,8 +159,18 @@
 				0419CBBF2A4E653D00A757E9 /* Profile.swift */,
 				0419CBC12A4E6A9D00A757E9 /* Customization.swift */,
 				0419CBC32A4E797900A757E9 /* PersonalDetail.swift */,
+				0419CBD12A55050500A757E9 /* ProfilePlus.swift */,
+				0419CBD32A55063F00A757E9 /* ImagePicker.swift */,
 			);
 			path = Setting;
+			sourceTree = "<group>";
+		};
+		0419CBD52A55118100A757E9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0419CBD62A55119500A757E9 /* DailyIntake.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		042EF9A62A4A7E98008A5017 /* Lunch */ = {
@@ -175,6 +200,7 @@
 		044A36F12A4716A700A5DD11 = {
 			isa = PBXGroup;
 			children = (
+				0419CBD52A55118100A757E9 /* Model */,
 				042EF9A42A4A7C94008A5017 /* .gitattributes */,
 				044A36FC2A4716A700A5DD11 /* FirstProject */,
 				044A370D2A4716AA00A5DD11 /* FirstProjectTests */,
@@ -196,6 +222,7 @@
 		044A36FC2A4716A700A5DD11 /* FirstProject */ = {
 			isa = PBXGroup;
 			children = (
+				0419CC592A553A7A00A757E9 /* Info.plist */,
 				044A36FD2A4716A700A5DD11 /* FirstProjectApp.swift */,
 				044A36FF2A4716A700A5DD11 /* ContentView.swift */,
 				044A37012A4716AA00A5DD11 /* Assets.xcassets */,
@@ -279,6 +306,7 @@
 			children = (
 				044A37472A4717BA00A5DD11 /* PickerData.swift */,
 				044A37492A4717C400A5DD11 /* HeightPickerData.swift */,
+				0419CBCF2A54F68B00A757E9 /* weightPicker.swift */,
 				044A374B2A4717D000A5DD11 /* Color+hex.swift */,
 			);
 			path = Data;
@@ -291,6 +319,9 @@
 				044A37522A47352B00A5DD11 /* BreakfastView2.swift */,
 				044A37542A47FC6500A5DD11 /* BreakfastView3.swift */,
 				044A37562A47FE0500A5DD11 /* BreakfastView4.swift */,
+				0419CBCD2A52751200A757E9 /* SearchView.swift */,
+				0419CBC72A52508B00A757E9 /* FoodListView.swift */,
+				0419CBCB2A52748E00A757E9 /* Searchbar.swift */,
 			);
 			path = SmallView;
 			sourceTree = "<group>";
@@ -442,6 +473,7 @@
 				044A373F2A47177300A5DD11 /* DiaryHealth.swift in Sources */,
 				044A37302A47170700A5DD11 /* SecondStepView.swift in Sources */,
 				044A37322A47171100A5DD11 /* ThirdStepView.swift in Sources */,
+				0419CBCC2A52748E00A757E9 /* Searchbar.swift in Sources */,
 				044A374A2A4717C400A5DD11 /* HeightPickerData.swift in Sources */,
 				044A37392A47174900A5DD11 /* TapView.swift in Sources */,
 				044A374C2A4717D000A5DD11 /* Color+hex.swift in Sources */,
@@ -459,16 +491,22 @@
 				044A37292A4716D100A5DD11 /* MainView.swift in Sources */,
 				044A37482A4717BA00A5DD11 /* PickerData.swift in Sources */,
 				0419CBB92A4BD34900A757E9 /* TakeOurTest3.swift in Sources */,
+				0419CBD22A55050500A757E9 /* ProfilePlus.swift in Sources */,
+				0419CBCE2A52751200A757E9 /* SearchView.swift in Sources */,
 				044A37572A47FE0500A5DD11 /* BreakfastView4.swift in Sources */,
+				0419CBD72A55119500A757E9 /* DailyIntake.swift in Sources */,
 				044A373D2A47176500A5DD11 /* DiaryWater.swift in Sources */,
 				044A372E2A4716F900A5DD11 /* FirstStepView.swift in Sources */,
 				0419CBBE2A4E641300A757E9 /* SettingView1.swift in Sources */,
 				044A36FE2A4716A700A5DD11 /* FirstProjectApp.swift in Sources */,
+				0419CBD02A54F68B00A757E9 /* weightPicker.swift in Sources */,
 				0419CBC02A4E653D00A757E9 /* Profile.swift in Sources */,
 				044A37512A472D5500A5DD11 /* BreakfastView.swift in Sources */,
 				044A372B2A4716DC00A5DD11 /* firstLoginView.swift in Sources */,
+				0419CBC82A52508B00A757E9 /* FoodListView.swift in Sources */,
 				044A375A2A491F8700A5DD11 /* TakeOurTest.swift in Sources */,
 				044A37552A47FC6500A5DD11 /* BreakfastView3.swift in Sources */,
+				0419CBD42A55063F00A757E9 /* ImagePicker.swift in Sources */,
 				044A37432A47179200A5DD11 /* DiaryTitleView.swift in Sources */,
 				044A375C2A4922BB00A5DD11 /* TakeOurTest1.swift in Sources */,
 			);
@@ -631,6 +669,10 @@
 				DEVELOPMENT_ASSET_PATHS = "\"FirstProject/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FirstProject/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Please Allow SwiftUI Appability to access camera";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -659,6 +701,10 @@
 				DEVELOPMENT_ASSET_PATHS = "\"FirstProject/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FirstProject/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Please Allow SwiftUI Appability to access camera";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

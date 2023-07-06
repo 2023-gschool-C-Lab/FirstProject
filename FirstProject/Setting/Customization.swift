@@ -46,8 +46,7 @@ struct Customization: View {
                                     VStack(alignment: .leading){
                                         Text("Adjust macronutrients")
                                             .font(.system(size: 20))
-                                        Text("Carbs, fat, and protein")
-                                            .font(.system(size: 12))
+                                     
                                         
                                     }
                                     Spacer()
@@ -70,8 +69,7 @@ struct Customization: View {
                                     VStack(alignment: .leading){
                                         Text("Adjust calories")
                                             .font(.system(size: 20))
-                                        Text("1483 kcal / day")
-                                            .font(.system(size: 12))
+                                 
                                     }
                                     Spacer()
                                     
@@ -121,7 +119,7 @@ struct Customization: View {
                         
                     }
                 }
-                
+                .listStyle(PlainListStyle())
             }
         }
     }

@@ -8,8 +8,7 @@
 import SwiftUI
 
 struct DiaryWater: View {
-    @State var liter = 0.0
-    
+    @EnvironmentObject var dailyIntakeModel: DailyIntakeModel
     
     var body: some View {
         VStack{
@@ -21,7 +20,7 @@ struct DiaryWater: View {
                     .shadow(radius: 2)
                 VStack{
                     HStack{
-                        Text("\(String(format: "%.1f", liter)) L")
+                        Text("\(String(format: "%.1f", dailyIntakeModel.today.amountOfWater)) L")
                             .font(.system(size: 13))
                         
                         
@@ -48,39 +47,39 @@ struct DiaryWater: View {
                         .frame(width: 300)
                     
                     Button {
-                        liter += 0.5
+                        dailyIntakeModel.today.amountOfWater += 0.5
                     } label: {
                         HStack{
-                            Image(liter < 0.5 ? "물" : "물들")
+                            Image(dailyIntakeModel.today.amountOfWater < 0.5 ? "물" : "물들")
                                 .resizable()
                                 .frame(width: 30,height: 40)
                             
-                            Image(liter < 1 ? "물" : "물들")
+                            Image(dailyIntakeModel.today.amountOfWater < 1 ? "물" : "물들")
                                 .resizable()
                                 .frame(width: 30,height: 40)
                             
-                            Image(liter < 1.5 ? "물" : "물들")
+                            Image(dailyIntakeModel.today.amountOfWater < 1.5 ? "물" : "물들")
                                 .resizable()
                                 .frame(width: 30,height: 40)
                             
-                            Image(liter < 2 ? "물" : "물들")
+                            Image(dailyIntakeModel.today.amountOfWater < 2 ? "물" : "물들")
                                 .resizable()
                                 .frame(width: 30,height: 40)
                             
-                            Image(liter < 2.5 ? "물" : "물들")
+                            Image(dailyIntakeModel.today.amountOfWater < 2.5 ? "물" : "물들")
                                 .resizable()
                                 .frame(width: 30,height: 40)
                             
-                            Image(liter < 3 ? "물" : "물들")
+                            Image(dailyIntakeModel.today.amountOfWater < 3 ? "물" : "물들")
                                 .resizable()
                                 .frame(width: 30,height: 40)
                             
-                            Image(liter < 3.5 ? "물" : "물들")
+                            Image(dailyIntakeModel.today.amountOfWater < 3.5 ? "물" : "물들")
                                 .resizable()
                                 .frame(width: 30,height: 40)
                             
                             
-                            Image(liter < 4 ? "물" : "물들")
+                            Image(dailyIntakeModel.today.amountOfWater < 4 ? "물" : "물들")
                                 .resizable()
                                 .frame(width: 30,height: 40)
                         }
@@ -98,5 +97,6 @@ struct DiaryWater: View {
 struct DiaryWater_Previews: PreviewProvider {
     static var previews: some View {
         DiaryWater()
+            .environmentObject(DailyIntakeModel())
     }
 }

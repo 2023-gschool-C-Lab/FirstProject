@@ -9,6 +9,7 @@ import SwiftUI
 
 struct Profile: View {
     var body: some View {
+        
         VStack(alignment: .leading){
             
             ZStack{
@@ -41,9 +42,9 @@ struct Profile: View {
                                     .fontWeight(.bold)
                             }
                             
-                            Text("아림 권")
+                            Text("길동 홍")
                                 .font(.system(size: 25))
-                            Text("17 years")
+                            Text("30 years")
                                 .font(.system(size: 15))
                         }
                     }
@@ -70,7 +71,7 @@ struct Profile: View {
                             Spacer()
                                 .frame(height:15)
                             
-                            Text("Active Diet")
+                            Text("Height")
                                 .font(.system(size: 15))
                             
                             Spacer()
@@ -91,7 +92,7 @@ struct Profile: View {
                                 .fontWeight(.bold)
                             Spacer()
                                 .frame(height:15)
-                            Text("Lifesum Standard")
+                            Text("160 cm")
                                 .font(.system(size: 15))
                                 .fontWeight(.bold)
                             Spacer()
@@ -100,6 +101,7 @@ struct Profile: View {
                         }
 
                     }
+                    .padding(.leading,20)
                 }
                 
                 

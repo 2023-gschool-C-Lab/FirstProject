@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct BreakfastView2: View {
+    @EnvironmentObject var dailyIntakeModel: DailyIntakeModel
     var body: some View {
         
         ZStack{
@@ -26,14 +27,17 @@ struct BreakfastView2: View {
                     Spacer()
                         .frame(width: 150)
                     
-                    Text("0 / 1758 kcal")
+                    Text("\(dailyIntakeModel.today.kcal) / 1758 kcal")
                         .fontWeight(.bold)
                 }
-                Rectangle()
-                    .frame(width: 350,height: 10)
-                    .cornerRadius(10)
-                    .foregroundColor(Color(.systemGray5))
                 
+                Gauge(value: Double(dailyIntakeModel.today.kcal), in: 0...1758) {
+                    EmptyView()
+                }
+                .tint(Color(hex: "84C894"))
+                .frame(width: 350,height: 10)
+                
+                                
                 Spacer()
                     .frame(height: 25)
                 
@@ -42,32 +46,45 @@ struct BreakfastView2: View {
                         Text("Carbs")
                             .font(.system(size: 15))
                             .fontWeight(.medium)
-                        Rectangle()
-                            .frame(width: 110,height: 10)
-                            .cornerRadius(10)
-                            .foregroundColor(Color(.systemGray5))
                         
-                        Text("0 / 220g")                            .font(.system(size: 13))
+                        Gauge(value: Double(dailyIntakeModel.today.carbs), in: 0...220) {
+                            EmptyView()
+                        }
+                        .tint(Color(hex: "DB9A57"))
+                        .frame(width: 110,height: 10)
+                        
+                        Text("\(dailyIntakeModel.today.carbs) / 220g")
+                            .font(.system(size: 13))
+                    }
+                    
+                   
+                    
+                    VStack{
+                        Text("Protein")
+                            .font(.system(size: 15))
+                            .fontWeight(.medium)
+                        
+                        Gauge(value: Double(dailyIntakeModel.today.protein), in: 0...220) {
+                            EmptyView()
+                        }
+                        .tint(Color(hex: "6EA6DD"))
+                        .frame(width: 110,height: 10)
+                        
+                        Text("\(dailyIntakeModel.today.protein) / 88g")
+                            .font(.system(size: 13))
                     }
                     VStack{
-                        Text("Protein")                            .font(.system(size: 15))
+                        Text("Fat")
+                            .font(.system(size: 15))
                             .fontWeight(.medium)
-                        Rectangle()
-                            .frame(width: 110,height: 10)
-                            .cornerRadius(10)
-                            .foregroundColor(Color(.systemGray5))
+                       
+                        Gauge(value: Double(dailyIntakeModel.today.fat), in: 0...220) {
+                            EmptyView()
+                        }
+                        .tint(Color(hex: "8C83C4"))
+                        .frame(width: 110,height: 10)
                         
-                        Text("0 / 88g")                            .font(.system(size: 13))
-                    }
-                    VStack{
-                        Text("Fat")                            .font(.system(size: 15))
-                            .fontWeight(.medium)
-                        Rectangle()
-                            .frame(width: 110,height: 10)
-                            .cornerRadius(10)
-                            .foregroundColor(Color(.systemGray5))
-                        
-                        Text("0 / 59g")
+                        Text("\(dailyIntakeModel.today.fat) / 59g")
                             .font(.system(size: 13))
                     }
                 }
@@ -78,5 +95,6 @@ struct BreakfastView2: View {
 struct BreakfastView2_Previews: PreviewProvider {
     static var previews: some View {
         BreakfastView2()
+            .environmentObject(DailyIntakeModel())
     }
 }

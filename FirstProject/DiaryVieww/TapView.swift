@@ -8,9 +8,11 @@
 import SwiftUI
 
 struct TapView: View {
+    @EnvironmentObject var dailyIntakeModel: DailyIntakeModel
     @State var clicked = false
     @State var isPlusTabbed = false
     @State var selection = 0
+    @State var TapView = false
     
     var body: some View {
         NavigationView {
@@ -65,7 +67,7 @@ struct TapView: View {
                 .zIndex(1)
                 
                 if isPlusTabbed {
-                    PlusView()
+                    PlusView(isPlusTabbed: $isPlusTabbed)
                         .transition(.move(edge: .bottom))
                         .animation(.easeIn)
                         .ignoresSafeArea()

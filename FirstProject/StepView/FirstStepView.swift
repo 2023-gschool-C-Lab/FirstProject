@@ -60,7 +60,7 @@ struct FirstStepView: View {
                     
                     Text("Let's get to know you better!")
                         .font(.system(size: 13))
-                        .padding(.bottom, 50)
+                        .padding(.bottom, 30)
                     
                     
                     Text("What goal do you have")

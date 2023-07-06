@@ -45,6 +45,7 @@ struct DiaryHealth: View {
                     }
                 }
             }
+            .padding(.trailing,40)
         }
     }
 }

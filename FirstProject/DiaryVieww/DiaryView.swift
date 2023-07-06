@@ -9,6 +9,8 @@ import SwiftUI
 
 struct DiaryView: View {
     @State var liter = 0.0
+    @State var isDiaryViewprPresented = false
+
     
     var body: some View {
         
@@ -54,7 +56,7 @@ struct DiaryView: View {
                     Spacer()
                         .frame(height:40)
                     
-                    DiaryViewpr()
+                    DiaryViewpr(DiaryViewpr: $isDiaryViewprPresented)
                     DiaryHealth()
                         
                         Spacer()

@@ -10,29 +10,38 @@ import SwiftUI
 struct MainView: View {
     var body: some View {
         
-        ZStack{
+        NavigationView{
+            NavigationLink(destination: FirstStepView()) {
             
-            Color(hex: "255A46")
-                .ignoresSafeArea()
-            
-            HStack{
-                
-                Text("Lifesum")
-                    .font(.system(size: 50))
-                    .foregroundColor(Color.white)
-                
                 ZStack{
                     
-                    Image(systemName: "circle")
-                        .foregroundColor(.white)
+                    Color(hex: "255A46")
+                        .ignoresSafeArea()
                     
-                    Text("R")
-                        .font(.system(size: 10))
-                        .foregroundColor(Color.white)
+                    
+                    HStack{
+                        
+                        Text("Lifesum")
+                            .font(.system(size: 50))
+                            .foregroundColor(Color.white)
+                        
+                        ZStack{
+                            
+                            Image(systemName: "circle")
+                                .foregroundColor(.white)
+                            
+                            Text("R")
+                                .font(.system(size: 10))
+                                .foregroundColor(Color.white)
+                        }
+                    }
                 }
             }
+            .transition(.slide)
         }
+        .navigationBarBackButtonHidden()
     }
+
 }
 
 struct MainView_Previews: PreviewProvider {

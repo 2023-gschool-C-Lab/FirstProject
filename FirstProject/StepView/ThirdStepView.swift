@@ -11,90 +11,101 @@ import SwiftUI
 struct ThirdStepView: View {
     @State var isBirthSelected = false
     
-    
     var body: some View {
-        ZStack {
-            Color(hex: "F0EDE8")
-                .ignoresSafeArea()
+        
+        NavigationView{
             
-            VStack {
-                HStack {
-                    Rectangle()
-                        .frame(width: 40, height: 3)
-                        .cornerRadius(7)
-                        .foregroundColor(Color(hex: "71B55C"))
-                    
-                    Rectangle()
-                        .frame(width: 40, height: 3)
-                        .cornerRadius(7)
-                        .foregroundColor(Color(hex: "71B55C"))
-                    
-                    Rectangle()
-                        .frame(width: 40, height: 3)
-                        .cornerRadius(7)
-                        .foregroundColor(Color(hex: "71B55C"))
-                    
-                    Rectangle()
-                        .frame(width: 40, height: 3)
-                        .cornerRadius(7)
-                        .foregroundColor(Color(.systemGray4))
-                    
-                    Rectangle()
-                        .frame(width: 40, height: 3)
-                        .cornerRadius(7)
-                        .foregroundColor(Color(.systemGray4))
-                    
-                    
-                }
-                
-                Spacer()
-                    .frame(height: 20)
+            ZStack {
+                Color(hex: "F0EDE8")
+                    .ignoresSafeArea()
                 
                 VStack {
-                    Text("Got it.")
-                        .font(.system(size: 13))
+                    HStack {
+                        Rectangle()
+                            .frame(width: 40, height: 3)
+                            .cornerRadius(7)
+                            .foregroundColor(Color(hex: "71B55C"))
+                        
+                        Rectangle()
+                            .frame(width: 40, height: 3)
+                            .cornerRadius(7)
+                            .foregroundColor(Color(hex: "71B55C"))
+                        
+                        Rectangle()
+                            .frame(width: 40, height: 3)
+                            .cornerRadius(7)
+                            .foregroundColor(Color(hex: "71B55C"))
+                        
+                        Rectangle()
+                            .frame(width: 40, height: 3)
+                            .cornerRadius(7)
+                            .foregroundColor(Color(.systemGray4))
+                        
+                        Rectangle()
+                            .frame(width: 40, height: 3)
+                            .cornerRadius(7)
+                            .foregroundColor(Color(.systemGray4))
+                        
+                        
+                    }
                     
                     Spacer()
-                        .frame(height: 30)
+                        .frame(height: 20)
                     
-                    Text("What's your date of birth?")
-                        .font(.system(size: 25))
-                }
-                Spacer()
-                    .frame(height: 100)
-                
-                PickerData(isBirthSelected: $isBirthSelected)
-                
-                Spacer()
-                    .frame(height: 100)
-                
-                VStack {
-                    Text("We use this information to calculate and provide you")
-                        .multilineTextAlignment(.center)
-                        .font(.system(size: 13))
-                    Text("with daily personalized recommendations.")
-                        .multilineTextAlignment(.center)
-                        .font(.system(size: 13))
-                }
-                
-                Spacer()
-                    .frame(height: 20)
-                
-                VStack {
-                    ZStack {
-                        Rectangle()
-                            .frame(width: 330, height: 40)
-                            .cornerRadius(7)
-                            .foregroundColor(isBirthSelected ? Color(hex: "71B55C") : .white)
+                    VStack {
+                        Text("Got it.")
+                            .font(.system(size: 13))
                         
-                        Text("Next")
-                            .font(.system(size: 14))
-                            .foregroundColor(isBirthSelected ? .white : .black)
+                        Spacer()
+                            .frame(height: 50)
+                        
+                        Text("What's your date of birth?")
+                            .font(.system(size: 25))
                     }
+                    Spacer()
+                        .frame(height: 110)
+                    
+                    PickerData(isBirthSelected: $isBirthSelected)
+                    
+                    Spacer()
+                        .frame(height: 120)
+                    
+                    VStack {
+                        Text("We use this information to calculate and provide you")
+                            .multilineTextAlignment(.center)
+                            .font(.system(size: 13))
+                        Text("with daily personalized recommendations.")
+                            .multilineTextAlignment(.center)
+                            .font(.system(size: 13))
+                    }
+                    
+                    Spacer()
+                        .frame(height: 20)
+                    
+                    VStack {
+                        
+                        NavigationLink{
+                            FourthStepView()
+                        } label: {
+                            ZStack {
+                                Rectangle()
+                                    .frame(width: 330, height: 40)
+                                    .cornerRadius(7)
+                                    .foregroundColor(isBirthSelected ? Color(hex: "71B55C") : .white)
+                                
+                                Text("Next")
+                                    .font(.system(size: 14))
+                                    .foregroundColor(isBirthSelected ? .white : .black)
+                            }
+                        }
+                    }
+                    .foregroundColor(.black)
+                    Spacer()
+                        .frame(height: 30)
                 }
-                .foregroundColor(.black)
             }
         }
+        .navigationBarBackButtonHidden()
     }
 }
 

@@ -8,6 +8,12 @@
 import SwiftUI
 
 struct DiaryViewpr: View {
+    @State var isBreakFastTapped = false
+    @State var isDinnerTapped = false
+    @State var isSnackTapped = false
+    @State var isLunchTapped = false
+    @Binding var DiaryViewpr: Bool
+
     
     var body: some View {
         
@@ -19,7 +25,6 @@ struct DiaryViewpr: View {
                     .cornerRadius(5)
                     .foregroundColor(.white)
                     .shadow(radius: 2)
-                
                 
                 HStack{
                     
@@ -40,19 +45,22 @@ struct DiaryViewpr: View {
                     Spacer()
                         .frame(width: 60)
                     
-                    ZStack{
-                        Image(systemName: "circle.fill")
-                            .resizable()
-                            .frame(width: 30, height: 30)
-                            .foregroundColor(Color(.systemGray5))
-                        
-                        Image(systemName: "plus")
-                            .resizable()
-                            .frame(width: 13, height: 13)
-                            .foregroundColor(Color(.darkGray))
+                    
+                    Button {
+                        isBreakFastTapped = true
+                    } label: {
+                        ZStack{
+                            Image(systemName: "circle.fill")
+                                .resizable()
+                                .frame(width: 30, height: 30)
+                                .foregroundColor(Color(.systemGray5))
+                            
+                            Image(systemName: "plus")
+                                .resizable()
+                                .frame(width: 13, height: 13)
+                                .foregroundColor(Color(.darkGray))
+                        }
                     }
-                    
-                    
                 }
             }
             Spacer()
@@ -84,16 +92,20 @@ struct DiaryViewpr: View {
                     Spacer()
                         .frame(width: 60)
                     
-                    ZStack{
-                        Image(systemName: "circle.fill")
-                            .resizable()
-                            .frame(width: 30, height: 30)
-                            .foregroundColor(Color(.systemGray5))
-                        
-                        Image(systemName: "plus")
-                            .resizable()
-                            .frame(width: 13, height: 13)
-                            .foregroundColor(Color(.darkGray))
+                    Button {
+                        isLunchTapped = true
+                    } label: {
+                        ZStack{
+                            Image(systemName: "circle.fill")
+                                .resizable()
+                                .frame(width: 30, height: 30)
+                                .foregroundColor(Color(.systemGray5))
+                            
+                            Image(systemName: "plus")
+                                .resizable()
+                                .frame(width: 13, height: 13)
+                                .foregroundColor(Color(.darkGray))
+                        }
                     }
                 }
             }
@@ -114,7 +126,7 @@ struct DiaryViewpr: View {
                         .frame(width: 50, height: 40)
                     
                     Spacer()
-                        .frame(width: 14)
+                        .frame(width: 10)
                     
                     VStack(alignment: .leading){
                         Text("Add dinner")
@@ -126,16 +138,20 @@ struct DiaryViewpr: View {
                     Spacer()
                         .frame(width: 60)
                     
-                    ZStack{
-                        Image(systemName: "circle.fill")
-                            .resizable()
-                            .frame(width: 30, height: 30)
-                            .foregroundColor(Color(.systemGray5))
-                        
-                        Image(systemName: "plus")
-                            .resizable()
-                            .frame(width: 13, height: 13)
-                            .foregroundColor(Color(.darkGray))
+                    Button {
+                        isDinnerTapped = true
+                    } label: {
+                        ZStack{
+                            Image(systemName: "circle.fill")
+                                .resizable()
+                                .frame(width: 30, height: 30)
+                                .foregroundColor(Color(.systemGray5))
+                            
+                            Image(systemName: "plus")
+                                .resizable()
+                                .frame(width: 13, height: 13)
+                                .foregroundColor(Color(.darkGray))
+                        }
                     }
                 }
             }
@@ -170,16 +186,20 @@ struct DiaryViewpr: View {
                         Spacer()
                             .frame(width: 99)
                         
-                        ZStack{
-                            Image(systemName: "circle.fill")
-                                .resizable()
-                                .frame(width: 30, height: 30)
-                                .foregroundColor(Color(.systemGray5))
-                            
-                            Image(systemName: "plus")
-                                .resizable()
-                                .frame(width: 13, height: 13)
-                                .foregroundColor(Color(.darkGray))
+                        Button {
+                            isSnackTapped = true
+                        } label: {
+                            ZStack{
+                                Image(systemName: "circle.fill")
+                                    .resizable()
+                                    .frame(width: 30, height: 30)
+                                    .foregroundColor(Color(.systemGray5))
+                                
+                                Image(systemName: "plus")
+                                    .resizable()
+                                    .frame(width: 13, height: 13)
+                                    .foregroundColor(Color(.darkGray))
+                            }
                         }
                     }
                 }
@@ -226,10 +246,33 @@ struct DiaryViewpr: View {
             Spacer()
                 .frame(height:25)
         }
+        .fullScreenCover(isPresented: $isBreakFastTapped, onDismiss: {
+            DiaryViewpr = true
+        }, content: {
+            BreakfastView(isBreakFastTapped: $isBreakFastTapped)
+        })
+        
+        .fullScreenCover(isPresented: $isLunchTapped, onDismiss: {
+            DiaryViewpr = true
+        }, content: {
+            LunchView(isBreakFastTapped: $isLunchTapped)
+        })
+        
+        .fullScreenCover(isPresented: $isDinnerTapped, onDismiss: {
+            DiaryViewpr = true
+        }, content: {
+            DinnerView(isBreakFastTapped: $isDinnerTapped)
+        })
+        
+        .fullScreenCover(isPresented: $isSnackTapped, onDismiss: {
+            DiaryViewpr = true
+        }, content: {
+            SnackView(isBreakFastTapped: $isSnackTapped)
+        })
     }
 }
 struct DiaryViewpr_Previews: PreviewProvider {
     static var previews: some View {
-        DiaryViewpr()
+        DiaryViewpr(isBreakFastTapped: false, isDinnerTapped: false, isSnackTapped: false, isLunchTapped: false, DiaryViewpr: .constant(false))
     }
 }

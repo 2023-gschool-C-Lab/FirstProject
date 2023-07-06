@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct FirstProjectApp: App {
+    @StateObject var dailyIntakeModel = DailyIntakeModel()
+    
     var body: some Scene {
         WindowGroup {
-            TakeOurTest()
+            TapView()
+                .environmentObject(dailyIntakeModel)
         }
     }
 }
